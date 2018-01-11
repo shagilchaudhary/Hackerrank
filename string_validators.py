@@ -69,13 +69,15 @@ True
 True
 """
 
-string = raw_input()
+#the error free code 
+#any fuction is not running quite well on hackerrank
+s = input()
 
-print any(c.isalnum() for c in string)
-print any(c.isalpha() for c in string)
-print any(c.isdigit() for c in string)
-print any(c.islower() for c in string)
-print any(c.isupper() for c in string)
+print(bool(len([ch for ch in s if ch.isalnum()])))
+print(bool(len([ch for ch in s if ch.isalpha()])))
+print(bool(len([ch for ch in s if ch.isdigit()])))
+print(bool(len([ch for ch in s if ch.islower()])))
+print(bool(len([ch for ch in s if ch.isupper()])))
 
 
 
